@@ -1,0 +1,19 @@
+Auths = [['User1','User1Pass'],['User2','User2Pass']]
+
+
+
+
+while True:
+    LoggedIn = False
+    Inp0 = input('Username: ')
+    Inp1 = input('Password: ')
+    for x in Auths:
+        if Inp0 == x[0] and Inp1 == x[1]:
+            LoggedIn = True
+            print('Logged In')
+            
+    if not LoggedIn:
+        print('Unsuccesful... Please Retry or Contact an Administrator for Support')
+        exit()
+
+    input('Whats Next?')
